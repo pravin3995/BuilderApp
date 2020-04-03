@@ -36,4 +36,28 @@ a {
     line-height: 25px;
   }
 }
+.main-wrapper{
+  max-width: 600px;
+  margin: 0 auto;
+  fieldset{
+    border-radius: 50px;
+  }
+  .textarea-style{
+    resize: none;
+    width: 100%;
+    border-radius: 50px;
+    padding: 18px;
+    left: 0;
+    top: 0;
+  }
+  textarea:focus {
+    outline: 0em;
+  }
+}
+.mt-20{
+  margin-top: 20px;
+}
+.w-100{
+  width: 100%!important;
+}
 

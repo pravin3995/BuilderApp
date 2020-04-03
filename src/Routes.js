@@ -14,6 +14,8 @@ import {
   Settings as SettingsView,
   SignUp as SignUpView,
   SignIn as SignInView,
+  Contact as ContactView,
+  Enquiry as EnquiryView,
   NotFound as NotFoundView
 } from './views';
 
@@ -78,6 +80,18 @@ const Routes = () => {
         exact
         layout={MinimalLayout}
         path="/sign-in"
+      />
+      <RouteWithLayout
+        component={ContactView}
+        exact
+        layout={MinimalLayout}
+        path="/contact"
+      />
+      <RouteWithLayout
+        component={EnquiryView}
+        exact
+        layout={MinimalLayout}
+        path="/enquiry"
       />
       <RouteWithLayout
         component={NotFoundView}
