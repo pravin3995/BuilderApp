@@ -119,7 +119,6 @@ const Topbar = props => {
                             title:classes.title
                         }}
                       subheader="48 min ago"
-                      
                     />
                     <CardContent>
                       <span className={classes.Location}>Kothrud Nal Stop</span>
@@ -128,7 +127,26 @@ const Topbar = props => {
                     <CardContent className={classes.price}>2 BHK starting from $234</CardContent>
                     <p className={classes.number}>2 New</p>
                   </Card>
-   
+                  <Card elevation={1} className={classes.NotifiactionWrapper}  onClick={handleClose} >
+                  <div className={classes.Notification}>
+                    <CardHeader
+                      avatar={
+                        <Avatar aria-label="recipe" src="images/home.jpeg" >
+                            </Avatar>
+                      }
+                      title="Aroma Towers"
+                        classes={{
+                            title:classes.title
+                        }}
+                      subheader="48 min ago"
+                    />
+                    <CardContent>
+                      <span className={classes.Location}>Kothrud Nal Stop</span>
+                    </CardContent>
+                    </div>
+                    <CardContent className={classes.price}>2 BHK starting from $234</CardContent>
+                    <p className={classes.number}>2 New</p>
+                  </Card>
             </Menu>
           
           <IconButton
