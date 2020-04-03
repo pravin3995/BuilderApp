@@ -59,20 +59,30 @@ const Sidebar = props => {
       icon: <ShoppingBasketIcon />
     },
     {
+      title: 'Enquiry',
+      href: '/enquiry',
+      icon: <DashboardIcon />
+    },
+    {
+      title: 'Contact',
+      href: '/contact',
+      icon: <DashboardIcon />
+    },
+    {
       title: 'Authentication',
       href: '/sign-in',
       icon: <LockOpenIcon />
     },
-    {
-      title: 'Typography',
-      href: '/typography',
-      icon: <TextFieldsIcon />
-    },
-    {
-      title: 'Icons',
-      href: '/icons',
-      icon: <ImageIcon />
-    },
+    // {
+    //   title: 'Typography',
+    //   href: '/typography',
+    //   icon: <TextFieldsIcon />
+    // },
+    // {
+    //   title: 'Icons',
+    //   href: '/icons',
+    //   icon: <ImageIcon />
+    // },
     {
       title: 'Account',
       href: '/account',
@@ -103,7 +113,7 @@ const Sidebar = props => {
           className={classes.nav}
           pages={pages}
         />
-        <UpgradePlan />
+        {/* <UpgradePlan /> */}
       </div>
     </Drawer>
   );

@@ -22,3 +22,18 @@ a {
 #root {
   height: 100%;
 }
+.recent-properties{
+  .MuiCardHeader-action{
+    align-self: center;
+  }
+  .MuiCardHeader-title{
+    font-size: 17px;
+  }
+  .MuiCardHeader-subheader{
+    font-size: 14px;
+  }
+  .MuiTypography-body2{
+    line-height: 25px;
+  }
+}
+

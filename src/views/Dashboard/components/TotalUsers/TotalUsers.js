@@ -8,14 +8,16 @@ import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    height: '100%'
+    height: '100%',
+    background: 'linear-gradient(135deg, #f48665 0%, #fda23f 100%)'
   },
   content: {
     alignItems: 'center',
     display: 'flex'
   },
   title: {
-    fontWeight: 700
+    fontWeight: 700,
+    color:'#fff'
   },
   avatar: {
     backgroundColor: theme.palette.success.main,
@@ -62,9 +64,9 @@ const TotalUsers = props => {
               gutterBottom
               variant="body2"
             >
-              TOTAL USERS
+              PROPERTIES FOR SALE
             </Typography>
-            <Typography variant="h3">1,600</Typography>
+            <Typography variant="h2"  className={classes.title}>1,600</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -72,7 +74,7 @@ const TotalUsers = props => {
             </Avatar>
           </Grid>
         </Grid>
-        <div className={classes.difference}>
+        {/* <div className={classes.difference}>
           <ArrowUpwardIcon className={classes.differenceIcon} />
           <Typography
             className={classes.differenceValue}
@@ -86,7 +88,7 @@ const TotalUsers = props => {
           >
             Since last month
           </Typography>
-        </div>
+        </div> */}
       </CardContent>
     </Card>
   );

@@ -8,14 +8,16 @@ import MoneyIcon from '@material-ui/icons/Money';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    height: '100%'
+    height: '100%',
+    background: 'linear-gradient(135deg, #e36cd9 0%, #fe60ae 100%)'
   },
   content: {
     alignItems: 'center',
     display: 'flex'
   },
   title: {
-    fontWeight: 700
+    fontWeight: 700,
+    color:'#fff'
   },
   avatar: {
     backgroundColor: theme.palette.error.main,
@@ -33,6 +35,9 @@ const useStyles = makeStyles(theme => ({
   },
   differenceIcon: {
     color: theme.palette.error.dark
+  },
+  Card: {
+    background: 'linear-gradient(135deg, #e36cd9 0%, #fe60ae 100%)' 
   },
   differenceValue: {
     color: theme.palette.error.dark,
@@ -62,17 +67,17 @@ const Budget = props => {
               gutterBottom
               variant="body2"
             >
-              BUDGET
+              ALL PROPERTIES
             </Typography>
-            <Typography variant="h3">$24,000</Typography>
-          </Grid>
+            <Typography variant="h2" className={classes.title} >240</Typography>
+          </Grid> 
           <Grid item>
             <Avatar className={classes.avatar}>
               <MoneyIcon className={classes.icon} />
             </Avatar>
           </Grid>
         </Grid>
-        <div className={classes.difference}>
+        {/* <div className={classes.difference}>
           <ArrowDownwardIcon className={classes.differenceIcon} />
           <Typography
             className={classes.differenceValue}
@@ -86,7 +91,7 @@ const Budget = props => {
           >
             Since last month
           </Typography>
-        </div>
+        </div> */}
       </CardContent>
     </Card>
   );

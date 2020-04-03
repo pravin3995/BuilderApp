@@ -66,7 +66,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'url(/images/auth.jpg)',
+    backgroundImage: 'url(/images/home.jpeg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
@@ -353,6 +353,8 @@ const SignUp = props => {
                   size="large"
                   type="submit"
                   variant="contained"
+                  component={RouterLink}
+                    to="/sign-in"
                 >
                   Sign up now
                 </Button>

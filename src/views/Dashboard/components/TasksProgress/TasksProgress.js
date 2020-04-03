@@ -14,14 +14,16 @@ import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    height: '100%'
+    height: '100%',
+    background: 'linear-gradient(135deg, #23bdb8 0%, #43e794 100%)'
   },
   content: {
     alignItems: 'center',
     display: 'flex'
   },
   title: {
-    fontWeight: 700
+    fontWeight: 700,
+    color:'#fff'
   },
   avatar: {
     backgroundColor: theme.palette.primary.main,
@@ -60,9 +62,9 @@ const TasksProgress = props => {
               gutterBottom
               variant="body2"
             >
-              TASKS PROGRESS
+             PROPERTIES FOR RENT
             </Typography>
-            <Typography variant="h3">75.5%</Typography>
+            <Typography variant="h2"  className={classes.title}>1300</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -70,11 +72,11 @@ const TasksProgress = props => {
             </Avatar>
           </Grid>
         </Grid>
-        <LinearProgress
+        {/* <LinearProgress
           className={classes.progress}
           value={75.5}
           variant="determinate"
-        />
+        /> */}
       </CardContent>
     </Card>
   );
