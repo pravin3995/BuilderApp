@@ -43,7 +43,21 @@ const useStyles = makeStyles(theme => ({
   },
   price:{
     display:'block',
-    padding:'0 16px'
+    padding:'0 16px',
+    fontSize:'15px'
+  },
+  title:{
+    color:'#000',
+    fontSize:'13px'
+  },
+  Location:{
+    fontSize:'13px',
+    color:'#546e7a'
+  },
+  number:{
+    fontSize:'13px',
+    padding:'16px',
+    color:'#546e7a'
   }
 }));
 
@@ -97,23 +111,22 @@ const Topbar = props => {
                   <div className={classes.Notification}>
                     <CardHeader
                       avatar={
-                        <Avatar aria-label="recipe" >
-                          C
+                        <Avatar aria-label="recipe" src="images/home.jpeg" >
                             </Avatar>
                       }
                       title="Aroma Towers"
-                      //   classes={{
-                      //       title:classes.Notification
-                      //   }}
+                        classes={{
+                            title:classes.title
+                        }}
                       subheader="48 min ago"
                       
                     />
                     <CardContent>
-                      <span className={classes.time}>Kothrud Nal Stop</span>
+                      <span className={classes.Location}>Kothrud Nal Stop</span>
                     </CardContent>
                     </div>
                     <CardContent className={classes.price}>2 BHK starting from $234</CardContent>
-                    <p>2 New</p>
+                    <p className={classes.number}>2 New</p>
                   </Card>
    
             </Menu>

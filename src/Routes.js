@@ -16,7 +16,7 @@ import {
   SignIn as SignInView,
   Contact as ContactView,
   Enquiry as EnquiryView,
-  NotFound as NotFoundView
+  NotFound as NotFoundView,
 } from './views';
 
 const Routes = () => {
@@ -45,6 +45,7 @@ const Routes = () => {
         layout={MainLayout}
         path="/products"
       />
+      
       <RouteWithLayout
         component={TypographyView}
         exact
