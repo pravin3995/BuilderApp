@@ -18,7 +18,10 @@ import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 
 
 const useStyles = makeStyles(() => ({
-  root: {}
+  root: {},
+  resize:{
+    fontSize:'14px'
+  },
 }));
 
 const OngoingForm = props => {
@@ -133,6 +136,11 @@ const OngoingForm = props => {
                 required
                 value={values.firstName}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               />
             </Grid>
             <Grid
@@ -148,8 +156,13 @@ const OngoingForm = props => {
                 // name="firstName"
                 onChange={handleChange}
                 required
-                value={values.address}
+                // value={values.address}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               />
             </Grid>
             <Grid
@@ -169,6 +182,11 @@ const OngoingForm = props => {
                 SelectProps={{ native: true }}
                 value={values.Featured}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               >
                 {Featured.map(option => (
                   <option
@@ -195,6 +213,11 @@ const OngoingForm = props => {
                 required
                 // value={values.email}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               />
             </Grid>
             <Grid
@@ -211,6 +234,11 @@ const OngoingForm = props => {
                 required
                 // value={values.email}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               />
             </Grid>
             <Grid
@@ -243,6 +271,11 @@ const OngoingForm = props => {
                 type="number"
                 value={values.phone}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               />
             </Grid>
             <Grid
@@ -259,6 +292,11 @@ const OngoingForm = props => {
                 required
                 // value={values.email}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               />
             </Grid>
             <Grid
@@ -275,6 +313,12 @@ const OngoingForm = props => {
                 required
                 // value={values.email}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
+
               />
             </Grid>
             <Grid
@@ -354,6 +398,11 @@ const OngoingForm = props => {
                 SelectProps={{ native: true }}
                 value={values.SiteType}
                 variant="outlined"
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
               >
                 {SiteType.map(option => (
                   <option
@@ -378,6 +427,11 @@ const OngoingForm = props => {
                 onChange={handleChange}
                 required
                 // value={values.country}
+                InputProps={{
+                  classes: {
+                    input: classes.resize
+                  },
+                }}
                 variant="outlined"
               />
             </Grid>

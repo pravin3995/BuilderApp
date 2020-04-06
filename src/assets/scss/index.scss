@@ -5,6 +5,9 @@
   // font-family: sans-serif;
 
 }
+.f-14{
+  font-size: 14px!important;
+}
 p,a{
   font-family: sans-serif;
   font-size: 14px
@@ -100,6 +103,7 @@ textarea:focus {
 .upload-file{
   border: 1px dashed #999;
   margin: 16px;
+  border-radius: 4px;
   label{
     width: 100%;
     padding: 30px;
@@ -120,4 +124,7 @@ textarea:focus {
    margin-right: 10px;
   //  color: #333;
  }
+}
+.MuiTextField-root{
+  font-size: 14px;
 }

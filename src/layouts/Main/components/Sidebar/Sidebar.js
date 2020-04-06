@@ -11,8 +11,10 @@ import ImageIcon from '@material-ui/icons/Image';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import SettingsIcon from '@material-ui/icons/Settings';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
-
+import ContactsIcon from '@material-ui/icons/Contacts';
 import { Profile, SidebarNav, UpgradePlan } from './components';
+import CallIcon from '@material-ui/icons/Call';
+import LocationCityIcon from '@material-ui/icons/LocationCity';
 
 const useStyles = makeStyles(theme => ({
   drawer: {
@@ -61,17 +63,17 @@ const Sidebar = props => {
     {
       title: 'Enquiry',
       href: '/enquiry',
-      icon: <DashboardIcon />
+      icon: <CallIcon />
     },
     {
       title: 'On Going',
       href: '/ongoing',
-      icon: <DashboardIcon />
+      icon: <LocationCityIcon />
     },
     {
       title: 'Contact ',
       href: '/contactform',
-      icon: <DashboardIcon />
+      icon: <ContactsIcon />
     },
     
     {
