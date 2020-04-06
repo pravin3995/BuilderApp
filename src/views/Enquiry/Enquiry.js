@@ -6,7 +6,12 @@ import { AccountProfile, AccountDetails } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(4)
+    padding: theme.spacing(4),
+    
+  },
+  Center:{
+    display:'flex',
+    justifyContent:'center'
   }
 }));
 
@@ -18,16 +23,9 @@ const Enquiry = () => {
       <Grid
         container
         spacing={4}
+        className={classes.Center}
       >
-        <Grid
-          item
-          lg={4}
-          md={6}
-          xl={4}
-          xs={12}
-        >
-          <AccountProfile />
-        </Grid>
+        
         <Grid
           item
           lg={8}
