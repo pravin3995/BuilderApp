@@ -63,12 +63,12 @@ const Sidebar = props => {
       href: '/enquiry',
       icon: <DashboardIcon />
     },
-   
     {
-      title: 'Site',
-      href: '/site',
+      title: 'Contact Form',
+      href: '/contactform',
       icon: <DashboardIcon />
     },
+    
     {
       title: 'Authentication',
       href: '/sign-in',

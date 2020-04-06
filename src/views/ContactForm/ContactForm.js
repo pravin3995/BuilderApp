@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Enquiry = () => {
+const ContactForm = () => {
   const classes = useStyles();
 
   return (
@@ -42,4 +42,4 @@ const Enquiry = () => {
   );
 };
 
-export default Enquiry;
+export default ContactForm;

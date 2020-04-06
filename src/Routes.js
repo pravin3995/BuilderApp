@@ -14,9 +14,10 @@ import {
   Settings as SettingsView,
   SignUp as SignUpView,
   SignIn as SignInView,
-  Contact as ContactView,
-  Enquiry as EnquiryView,
   NotFound as NotFoundView,
+  ContactForm as ContactFormView,
+  Enquiry as EnquiryView
+
 } from './views';
 
 const Routes = () => {
@@ -32,6 +33,18 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/dashboard"
+      />
+      <RouteWithLayout
+        component={ContactFormView}
+        exact
+        layout={MainLayout}
+        path="/contactform"
+      />
+      <RouteWithLayout
+        component={EnquiryView}
+        exact
+        layout={MainLayout}
+        path="/enquiry"
       />
       <RouteWithLayout
         component={UserListView}
@@ -82,18 +95,7 @@ const Routes = () => {
         layout={MinimalLayout}
         path="/sign-in"
       />
-      <RouteWithLayout
-        component={ContactView}
-        exact
-        layout={MinimalLayout}
-        path="/contact"
-      />
-      <RouteWithLayout
-        component={EnquiryView}
-        exact
-        layout={MinimalLayout}
-        path="/enquiry"
-      />
+     
       <RouteWithLayout
         component={NotFoundView}
         exact
