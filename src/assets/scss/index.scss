@@ -98,7 +98,7 @@ textarea:focus {
 }
 //Upload File
 .upload-file{
-  border: 2px dotted #999;
+  border: 1px dashed #999;
   margin: 16px;
   label{
     width: 100%;
@@ -110,8 +110,14 @@ textarea:focus {
     &:active{
       box-shadow: none;
    }
+   span{
+     text-transform: capitalize;
+     color: #333;
+     font-weight: 400;
+   }
  }
  .uplaod-icon{
    margin-right: 10px;
+  //  color: #333;
  }
 }
