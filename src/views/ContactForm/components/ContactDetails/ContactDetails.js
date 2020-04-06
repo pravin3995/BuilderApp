@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   
 }));
 
-const AccountProfile = props => {
+const ContactDetails = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -69,7 +69,7 @@ const AccountProfile = props => {
               color="textSecondary"
               variant="body1"
             >
-             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum is simply dummy text of the printing.
             </Typography>
           </div>
         </div>
@@ -79,15 +79,15 @@ const AccountProfile = props => {
           <div className='details-wrap'>
              <AccountBoxIcon className='icon'/>
              <div>
-               <p>+91 9080405000</p>
-               <p>+91 9080405000</p>
+             <a href="tel:+91 800555000" >+91 800555000</a>
+             <a href="tel:+91 800555000" >+91 800555000</a>
              </div>
           </div>
           <div className='details-wrap'>
              <AccountBoxIcon className='icon'/>
              <div>
-               <p>xyz@gmail.com</p>
-               <p>abc@gmail.com</p>
+               <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+               <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
              </div>
           </div>
           <div className='details-wrap mb-0'>
@@ -104,8 +104,8 @@ const AccountProfile = props => {
   );
 };
 
-AccountProfile.propTypes = {
+ContactDetails.propTypes = {
   className: PropTypes.string
 };
 
-export default AccountProfile;
+export default ContactDetails;

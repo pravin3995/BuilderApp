@@ -31,6 +31,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     border: '1px solid transparent',
+
     // '&:hover': {
     //   borderRadius: '15px',
     //   border: '1px solid #c3c3c3',
@@ -40,6 +41,8 @@ const useStyles = makeStyles(theme => ({
   },
   NotifiactionWrapper:{
     margin: '10px 10px',
+    fontFamily: 'sans-serif'
+
   },
   price:{
     display:'block',

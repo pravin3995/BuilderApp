@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
   root: {}
 }));
 
-const AccountDetails = props => {
+const EnquiryForm = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -95,7 +95,7 @@ const AccountDetails = props => {
             >
               <TextField
                 fullWidth
-                helperText="Please specify the first name"
+                // helperText="Please specify the first name"
                 label="Your name"
                 margin="dense"
                 name="firstName"
@@ -205,8 +205,8 @@ const AccountDetails = props => {
   );
 };
 
-AccountDetails.propTypes = {
+EnquiryForm.propTypes = {
   className: PropTypes.string
 };
 
-export default AccountDetails;
+export default EnquiryForm;

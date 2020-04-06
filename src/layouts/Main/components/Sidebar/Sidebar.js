@@ -64,7 +64,7 @@ const Sidebar = props => {
       icon: <DashboardIcon />
     },
     {
-      title: 'Contact Form',
+      title: 'Contact ',
       href: '/contactform',
       icon: <DashboardIcon />
     },

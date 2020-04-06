@@ -1,2 +1,2 @@
-export { default as AccountDetails } from './AccountDetails';
+export { default as EnquiryForm } from './EnquiryForm';
 export { default as AccountProfile } from './AccountProfile';
