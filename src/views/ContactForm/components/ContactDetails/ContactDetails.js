@@ -4,7 +4,9 @@ import clsx from 'clsx';
 import moment from 'moment';
 import { makeStyles } from '@material-ui/styles';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
-
+import CallIcon from '@material-ui/icons/Call';
+import MailIcon from '@material-ui/icons/Mail';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 import {
   Card,
   CardActions,
@@ -77,21 +79,21 @@ const ContactDetails = props => {
         <Divider />
         <CardContent>
           <div className='details-wrap'>
-             <AccountBoxIcon className='icon'/>
+             <CallIcon className='icon'/>
              <div>
              <a href="tel:+91 800555000" >+91 800555000</a>
              <a href="tel:+91 800555000" >+91 800555000</a>
              </div>
           </div>
           <div className='details-wrap'>
-             <AccountBoxIcon className='icon'/>
+             <MailIcon className='icon'/>
              <div>
                <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
                <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
              </div>
           </div>
           <div className='details-wrap mb-0'>
-             <AccountBoxIcon className='icon'/>
+             <LocationOnIcon className='icon'/>
              <div>
                <p>600 , Congress Ave</p>
                <p>Pune 411030</p>
