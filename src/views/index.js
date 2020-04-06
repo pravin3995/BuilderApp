@@ -9,5 +9,7 @@ export { default as SignUp } from './SignUp';
 export { default as Typography } from './Typography';
 export { default as UserList } from './UserList';
 export { default as ContactForm } from './ContactForm';
-export { default as Enquiry } from './Enquiry'
+export { default as Enquiry } from './Enquiry';
+export { default as Ongoing } from './Ongoing';
+
 

@@ -64,6 +64,11 @@ const Sidebar = props => {
       icon: <DashboardIcon />
     },
     {
+      title: 'On Going',
+      href: '/ongoing',
+      icon: <DashboardIcon />
+    },
+    {
       title: 'Contact ',
       href: '/contactform',
       icon: <DashboardIcon />

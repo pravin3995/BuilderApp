@@ -96,3 +96,22 @@ a {
 textarea:focus {
   outline: 0em;
 }
+//Upload File
+.upload-file{
+  border: 2px dotted #999;
+  margin: 16px;
+  label{
+    width: 100%;
+    padding: 30px;
+    box-shadow: none;
+    &:hover{
+      background: none;
+    }
+    &:active{
+      box-shadow: none;
+   }
+ }
+ .uplaod-icon{
+   margin-right: 10px;
+ }
+}

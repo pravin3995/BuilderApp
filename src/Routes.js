@@ -16,7 +16,8 @@ import {
   SignIn as SignInView,
   NotFound as NotFoundView,
   ContactForm as ContactFormView,
-  Enquiry as EnquiryView
+  Enquiry as EnquiryView,
+  Ongoing as OngoingView
 
 } from './views';
 
@@ -45,6 +46,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/enquiry"
+      />
+      <RouteWithLayout
+        component={OngoingView}
+        exact
+        layout={MainLayout}
+        path="/ongoing"
       />
       <RouteWithLayout
         component={UserListView}
